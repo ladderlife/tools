@@ -24,12 +24,17 @@ the License.
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="{{.Prefix}}/codelab-elements/codelab-elements.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css">
   <style>
     .success {
       color: #1e8e3e;
     }
     .error {
       color: red;
+    }
+    .hljs {
+      background-color: transparent !important;
+      padding: 0 !important;
     }
   </style>
 </head>
@@ -47,11 +52,14 @@ the License.
     {{end}}{{end}}
   </google-codelab>
 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/clojure.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/clojure-repl.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/dockerfile.min.js"></script>
   <script src="{{.Prefix}}/codelab-elements/native-shim.js"></script>
   <script src="{{.Prefix}}/codelab-elements/custom-elements.min.js"></script>
-  <script src="{{.Prefix}}/codelab-elements/prettify.js"></script>
   <script src="{{.Prefix}}/codelab-elements/codelab-elements.js"></script>
   <script src="//support.google.com/inapp/api.js"></script>
-
+  <script>hljs.highlightAll();</script>
 </body>
 </html>
